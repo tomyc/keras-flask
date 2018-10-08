@@ -1,6 +1,7 @@
-FROM joelogan/keras-tensorflow-flask-uwsgi-nginx-docker
+FROM tiangolo/uwsgi-nginx-flask:python3.6
 
 COPY ./requirements.txt /app/requirements.txt
+COPY ./uwsgi.ini /app/uwsgi.ini
 
 WORKDIR /app
 
