@@ -20,6 +20,7 @@ model = model_from_json(loaded_model_json)
 
 # załaduj wagi do nowego modelu
 model.load_weights('model.h5')
+model.compile(loss='binary_crossentropy',optimizer='adam')
 
 
 @app.route('/keras_predict', methods=['POST'])

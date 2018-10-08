@@ -3,7 +3,7 @@ services:
   flaskapp:
     image: "tomyci/keras-flask:latest"
     ports:
-      - "80:5001"
+      - "80:5000"
     networks:
       - web_nw
 networks:

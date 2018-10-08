@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask:python3.6
+FROM joelogan/keras-tensorflow-flask-uwsgi-nginx-docker
 
 COPY ./requirements.txt /app/requirements.txt
 
