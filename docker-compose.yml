@@ -1,0 +1,11 @@
+version: '3'
+services:
+  flaskapp:
+    image: "tomyci/keras-flask:latest"
+    ports:
+      - "80:5001"
+    networks:
+      - web_nw
+networks:
+  web_nw:
+    driver: bridge
